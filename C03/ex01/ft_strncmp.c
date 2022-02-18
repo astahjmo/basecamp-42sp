@@ -6,17 +6,19 @@
 /*   By: johmatos <johmatos@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/09 18:42:58 by johmatos          #+#    #+#             */
-/*   Updated: 2022/02/14 15:51:02 by johmatos         ###   ########.fr       */
+/*   Updated: 2022/02/17 20:37:17 by johmatos         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 int	ft_strncmp(char *s1, char *s2, unsigned int n)
 {
-	while (n != 0 && *s2 == *s1 && *s1 && *s2)
+	int	diff;
+
+	while ((n-- > 0) && (*s1 || *s2))
 	{
-		s1++;
-		s2++;
-		n--;
+		diff = (*s1++ - *s2++);
+		if (diff)
+			return (diff);
 	}
-	return (*s1 - *s2);
+	return (0);
 }

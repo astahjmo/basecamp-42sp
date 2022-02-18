@@ -1,18 +1,16 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_str_is_printable.c                              :+:      :+:    :+:   */
+/*   ft_strupcase.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: johmatos <johmatos@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/15 14:42:35 by johmatos          #+#    #+#             */
-/*   Updated: 2022/02/15 14:42:44 by johmatos         ###   ########.fr       */
+/*   Updated: 2022/02/16 20:08:43 by johmatos         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-
-char	*ft_str_is_uppercase(char *str)
+char	*ft_strupcase(char *str)
 {
 	unsigned int	index;
 

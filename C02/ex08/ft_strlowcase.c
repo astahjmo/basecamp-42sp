@@ -6,11 +6,9 @@
 /*   By: johmatos <johmatos@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/15 15:16:09 by johmatos          #+#    #+#             */
-/*   Updated: 2022/02/15 21:51:56 by johmatos         ###   ########.fr       */
+/*   Updated: 2022/02/16 20:09:00 by johmatos         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include <stdio.h>
 
 char	*ft_strlowcase(char *str)
 {

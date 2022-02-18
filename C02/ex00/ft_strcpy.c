@@ -1,33 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strstr.c                                        :+:      :+:    :+:   */
+/*   ft_strcpy.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: johmatos <johmatos@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/02/10 14:51:30 by johmatos          #+#    #+#             */
-/*   Updated: 2022/02/16 22:20:54 by johmatos         ###   ########.fr       */
+/*   Created: 2022/02/12 14:35:12 by johmatos          #+#    #+#             */
+/*   Updated: 2022/02/17 20:18:49 by johmatos         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-char	*ft_strstr(char *str, char *to_find)
+char	*ft_strcpy(char *dest, char *src)
 {
-	int	idx;
-	int	idx_2;
+	int		index;
 
-	idx = 0;
-	if (!(to_find[idx]))
-		return (str);
-	while (str[idx])
+	index = 0;
+	while (src[index])
 	{
-		idx_2 = 0;
-		while (str[idx + idx_2] == to_find[idx_2])
-		{
-			if (!(to_find[idx_2 + 1]))
-				return (&str[idx]);
-			idx_2++;
-		}
-		idx++;
+		dest[index] = src[index];
+		index++;
 	}
-	return (0);
+	return (dest);
 }

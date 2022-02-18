@@ -6,11 +6,9 @@
 /*   By: johmatos <johmatos@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/15 21:05:07 by johmatos          #+#    #+#             */
-/*   Updated: 2022/02/15 21:47:50 by johmatos         ###   ########.fr       */
+/*   Updated: 2022/02/16 20:31:57 by johmatos         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include <stdio.h>
 
 #define TRUE 1
 #define FALSE 0
@@ -44,7 +42,6 @@ char	*ft_strcapitalize(char *str)
 {
 	unsigned int	index;
 	unsigned int	lol;
-	char			temp;
 
 	lol = 0;
 	index = 0;

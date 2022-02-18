@@ -1,33 +1,30 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strstr.c                                        :+:      :+:    :+:   */
+/*   ft_strcat.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: johmatos <johmatos@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/02/10 14:51:30 by johmatos          #+#    #+#             */
-/*   Updated: 2022/02/16 22:20:54 by johmatos         ###   ########.fr       */
+/*   Created: 2022/02/09 19:15:42 by johmatos          #+#    #+#             */
+/*   Updated: 2022/02/16 20:55:32 by johmatos         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-char	*ft_strstr(char *str, char *to_find)
+char	*ft_strcat(char *dest, char *src)
 {
-	int	idx;
-	int	idx_2;
+	int	index_dest;
+	int	index_src;
 
-	idx = 0;
-	if (!(to_find[idx]))
-		return (str);
-	while (str[idx])
+	index_dest = 0;
+	index_src = 0;
+	while (dest[index_dest])
+		index_dest++;
+	while (src[index_src])
 	{
-		idx_2 = 0;
-		while (str[idx + idx_2] == to_find[idx_2])
-		{
-			if (!(to_find[idx_2 + 1]))
-				return (&str[idx]);
-			idx_2++;
-		}
-		idx++;
+		dest[index_dest] = src[index_src];
+		index_src++;
+		index_dest++;
 	}
-	return (0);
+	dest[index_dest] = '\0';
+	return (dest);
 }
